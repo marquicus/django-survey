@@ -38,6 +38,7 @@ class Response(models.Model):
         verbose_name=_("User"),
         null=True,
         blank=True,
+        related_name="+",
     )
     interview_uuid = models.CharField(_("Interview unique identifier"), max_length=36)
 
